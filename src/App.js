@@ -15,7 +15,7 @@ const App = () => {
   const [blogVisible, setBlogVisible] = useState(false)
 
   useEffect(() => {
-    window.document.title = '🦕 Dave Edwards Blog'
+    window.document.title = 'Dave Edwards Blog'
   }, [])
 
   return (
