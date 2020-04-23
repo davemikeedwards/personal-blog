@@ -23,7 +23,7 @@ const BlogDirectory = () => {
   )
 
   const blogPost = (
-    <Container>
+    <Container style={{ marginBottom: '50px' }}>
       <Header as='h2' className='blogText' content={blogTitle} style={{ margin: '0' }} />
       <Header as='h4' className='blogText' content={blogDate} style={{ margin: '0' }} />
       <hr style={{ color: '#fff' }} />
