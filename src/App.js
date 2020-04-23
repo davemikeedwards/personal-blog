@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useEffect, useState } from 'react'
+import './App.css'
 
-function App() {
+import BlogHeader from './components/Blog-Header'
+import BlogHome from './components/Blog-Home'
+import BlogAbout from './components/Blog-About'
+import BlogDirectory from './components/Blog-Directory'
+
+import { NavigationContext } from './Context'
+
+const App = () => {
+
+  const [homeVisible, setHomeVisible] = useState(true)
+  const [aboutVisible, setAboutVisible] = useState(false)
+  const [blogVisible, setBlogVisible] = useState(false)
+
+  useEffect(() => {
+    window.document.title = '🦕 Dave Edwards Blog'
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <NavigationContext.Provider value={[ setHomeVisible, setAboutVisible, setBlogVisible ]}>
+        <BlogHeader />
+      </NavigationContext.Provider>
+        {homeVisible && <BlogHome />}
+        {aboutVisible && <BlogAbout />}
+        {blogVisible && <BlogDirectory />}
+    </Fragment>
+  )
 }
 
-export default App;
+export default App
