@@ -41,6 +41,8 @@ const BlogAbout = () => (
                   <li style={{ paddingBottom: '5px' }}><span role='img' aria-label='Nerd' style={{ paddingRight: '10px' }}>🤓 </span> ReactJS && MongoDB && Node.js for Personal Projects</li>
                   <li style={{ paddingBottom: '5px' }}><span role='img' aria-label='Bank Note' style={{ paddingRight: '10px' }}>💷 </span> C# + SQL + .Net for Work</li>
                   <li style={{ paddingBottom: '5px' }}><span role='img' aria-label='Cowboy' style={{ paddingRight: '10px' }}>🤠 </span> DIY Expert (Just ask my wife)</li>
+                  <li style={{ paddingBottom: '5px' }}><span role='img' aria-label='Whiskey' style={{ paddingRight: '10px' }}>🥃 </span> Bourbon Consumer</li>
+                  <li style={{ paddingBottom: '5px' }}><span role='img' aria-label='Guitar' style={{ paddingRight: '10px' }}>🎸 </span> Country Music Lover</li>
                 </ul>
                 <br />
                 Thanks for reading, bye for now!
