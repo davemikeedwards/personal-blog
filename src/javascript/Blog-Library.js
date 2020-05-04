@@ -5,23 +5,30 @@ export const blogLibrary = [
     date: '4th May 2020',
     text: `
       An up-to-date developer portfolio is in my opinion, worth more than an excellent CV packed with experience. The classic "TODO App" is
-      a great addition to your portfolio, it may seem basic at first, but you can make it your own - put your mark on it - which is great
-      if you're a front end developer.
-      <br/>
+      a great addition to your portfolio, it may seem basic at first, but you can make it your own - put your mark on it, with animations or 
+      a slick design - which is great if you're a front end developer.
+      <br/><br/>
       For my portfolio I began with this blog site, then I was inspired by the software I develop for a living to build my own calendar / 
       diary. The app I built is made up of three tables, the first table I styled to look like a regular calendar made up of six rows. I 
       used conditional rendering using the logical && operator to display the fifth and sixth row if they were needed, these are dependant 
       on which day of the month is the first and how many days are in it. Each table cell is an object which has a 'value' - a string
       which represents the date of the cell - and a 'hasData' boolean value which will display a purple circle - indicating the user 
-      that the date has entries. The second table is the daily view, which would display any entries in the calendar for that day.
-      These entries are currently filterable by "Work" and "Personal" entries. The last table is the search results table which populates 
-      on key entry.
+      that the date has entries. 
+      <br/><br/>
+      The second table is the daily diary type view, which would display any entries in the calendar for that day. This currently displays
+      the full details of the diary entry, however, I plan to add a short description instead, then have the full entry open in a new modal
+      for reading / editing / removing etc. These entries are currently filterable by "Work" and "Personal" category types which are assigned
+      when creating a new entry via a dropdown menu.
+      <br/><br/>
+      The final table is the search results table which populates on key entry, if nothing matches the current string it will say so. I guess
+      I need to add the ability to look up partial matches (yet that could get messy with a full diary).
       <br/>
       <img class='responsive' src=${require('../images/ReactDiary.png')} />
       <br/>
-      The above image is the current look of the diary. The next feature I will add is the colour picker, which will give the user control 
-      of the look of the diary.
-      <br/>
+      The above image is the current look of the diary. The next feature I will add is a colour picker, which will give the user control 
+      of the look of the diary, I don't envisage it being "choose any two colours" as that could go terribly wrong, so I will make a colour 
+      palette for users to select two colours which will complement each other.
+      <br/><br/>
       Each table has an array of objects in the app's state. The tables are rendered with data simply by performing a forEach method on the 
       array of objects like below (DISCLAIMER - This is not the actual code).
       <br/>
