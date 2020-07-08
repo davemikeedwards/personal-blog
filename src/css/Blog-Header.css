@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+.blmCol {
+  background: #000;
+}
+
+.blmText {
+  color: #fff;
+  font-size: 15px;
+  display: inline;
+  margin-right: 15px;
+  font-weight: bolder;
+}
+
+.blm {
+  background-color: #FCE21B;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bolder;
+  color: #000;
+}
+
+.blm:hover {
+  cursor: pointer;
+  color: #000;
+}
+
 .blogHeader {
   height: 75px !important;
   background: #333 !important;
